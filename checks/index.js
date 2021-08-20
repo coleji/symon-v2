@@ -19,4 +19,5 @@ module.exports = {
 	versionJava: require("./versionJava"),
 	versionUbuntu: require("./versionUbuntu"),
 	host: require("./host"),
+	certificateExpiration: require("./certificateExpiration"),
 }

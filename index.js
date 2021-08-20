@@ -67,6 +67,8 @@ const test = (function() {
 		return checks.versionUbuntu;
 	case "host":
 		return checks.host;
+	case "certificateExpiration":
+		return checks.certificateExpiration;
 	case "mountCheck":
 		return args => {
 			return checks.dfCheck(args)
