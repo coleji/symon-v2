@@ -19,4 +19,4 @@ cp package-lock.json dist/usr/share/symon-v2
 cp nagios-checks.conf dist/usr/share/icinga2/include/symon_definitions.conf
 dpkg-deb --build dist
 mv dist.deb dist/symon-v2-${VERSION}_amd64.deb
-# scp dist/symon-v2-${VERSION}_amd64.deb root@rsx.community-boating.org:/root/
+scp dist/symon-v2-${VERSION}_amd64.deb rsx:/root/
