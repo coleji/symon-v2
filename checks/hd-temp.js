@@ -13,7 +13,7 @@ module.exports = function(args) {
 			else if (isNaN(input)) reject([false, "Invalid temp threshold \"" + input + "\""])
 			else return Number(input)
 		}())
-		exec("smartctl -a " + device + " | grep Temp | awk '{print $10}'", function(error, stdout, stderr) {
+		exec("sudo smartctl -a " + device + " | grep Temp | awk '{print $10}'", function(error, stdout, stderr) {
 			var regexp = /(\d*)/
 			var result = regexp.exec(stdout)
 			if (result && result[1]) {
