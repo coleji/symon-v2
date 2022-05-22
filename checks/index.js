@@ -20,4 +20,5 @@ module.exports = {
 	versionUbuntu: require("./versionUbuntu"),
 	host: require("./host"),
 	certificateExpiration: require("./certificateExpiration"),
+	fileModified: require("./fileModified"),
 }

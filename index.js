@@ -39,6 +39,8 @@ const test = (function() {
 		return checks.swap;
 	case "fileExists":
 		return checks.fileExists;
+	case "fileModified":
+		return checks.fileModified;
 	case "dfCheck":
 		return checks.dfCheck;
 	case "pm2":
