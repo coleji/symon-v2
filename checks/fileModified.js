@@ -13,8 +13,8 @@ module.exports = function(args) {
 				const then = moment.unix(modifiedTimestamp)
 				const now = moment();
 				const hoursAgo = now.diff(then) / (1000 * 60 * 60)
-				if (hoursAgo < 0) reject([true, "File was modified in the future"])
-				else if (hoursAgo > Number(args[1])) reject([true, "File was last modified " + hoursAgo + " hours ago."])
+				if (hoursAgo < 0) reject([true, "File " + args[0] + " was modified in the future"])
+				else if (hoursAgo > Number(args[1])) reject([true, "File " + args[0] + " was last modified " + hoursAgo + " hours ago."])
 				else resolve();
 			}
 		})
