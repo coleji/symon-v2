@@ -71,6 +71,8 @@ const test = (function() {
 		return checks.host;
 	case "certificateExpiration":
 		return checks.certificateExpiration;
+	case "tcp":
+		return checks.tcp;
 	case "mountCheck":
 		return args => {
 			return checks.dfCheck(args)

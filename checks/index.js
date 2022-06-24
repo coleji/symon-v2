@@ -21,4 +21,5 @@ module.exports = {
 	host: require("./host"),
 	certificateExpiration: require("./certificateExpiration"),
 	fileModified: require("./fileModified"),
+	tcp: require("./tcp")
 }
