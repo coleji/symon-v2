@@ -73,6 +73,8 @@ const test = (function() {
 		return checks.certificateExpiration;
 	case "tcp":
 		return checks.tcp;
+	case "dockerContainerUp":
+		return checks.dockerContainerUp;
 	case "mountCheck":
 		return args => {
 			return checks.dfCheck(args)
